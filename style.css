@@ -1,4 +1,8 @@
 /* HEADER */
+body {
+  margin:0;
+}
+
 .menu-pc {
   padding: 25px;
   display: flex;
@@ -42,13 +46,12 @@ button:hover {
 .portada {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  
 }
 .imagen-informacion{
-  width: 70vh;
-  height: 50vh;
-  justify-content: flex-end;
+  width: 50%;
+  height: 50%;
+  justify-content:flex-end;
   align-items: flex-start;
 }
 img { 
@@ -111,7 +114,15 @@ h3 {
   justify-content: center;
 }
 
-@media (max-width:600px) {
+@media (min-width:600px)and (max-width:900px) {
   .portada {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
+}
+
+
+@media (max-width:600px){
+  .portada {
+    flex-direction: column;
+  }
+}
