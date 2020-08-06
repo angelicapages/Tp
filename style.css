@@ -40,15 +40,21 @@ button:hover {
 }
 
 .portada {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: stretch;
 }
-.imagen-informacion {
+.imagen-informacion{
+  width: 70vh;
+  height: 50vh;
   justify-content: flex-end;
   align-items: flex-start;
 }
-
+img { 
+  width: 100%;
+  height: auto;
+}
 .informacion {
   padding-left: 50px;
   display: flex;
@@ -71,6 +77,7 @@ h2 {
 }
 
 .principal {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
