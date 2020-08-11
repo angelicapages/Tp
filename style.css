@@ -147,16 +147,51 @@ height:130px ;
 /*SECCIÓN DE FRASE INSPIRADORA*/
 
 .fraseinspiradora {
+  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #8b709c;
+  background-color: #6b5678;
+  color: #e7f7e1;
 }
 .comillas {
-  display: flex;
-  height: 200px;
-  width: auto;
+  margin-bottom: 20px;
+font-size: 100px;
+text-align: center;
 }
+
+.frasemuymuyinspiradora {
+  margin-top: 10px;
+  font-size: large;
+}
+
+h5 {
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*SECCIÓN MIS PROYECTOS*/
+
+h6 {
+color: #8b709c;
+  font-family: 'Spartan', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.secundaria {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  max-width: 50%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 
 /*MEDIA QUERI*/
 
