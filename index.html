@@ -13,6 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
+
 </head>
 
 <body>
@@ -34,7 +39,7 @@
     </header>
 
     <!-- SECCIÓN PRINCIPAL -->
-    <section>
+    <section id="HOLA">
         <div class="portada">
             <div class="informacion">
                 <h1>Hola! Soy</h1>
@@ -48,7 +53,7 @@
     </section>
 
     <!--SECCIÓN TARJETAS DE MIS CONOCIMIENTOS-->
-    <section>
+    <section id="conocimientos">
         <div class="tarjetas">
             <div class="títulodetarjetas">
                 <h4>Mis conocimientos</h4>
@@ -100,10 +105,20 @@
     </section>
 
     <!--SECCIÓN MIS PROYECTOS-->
-    <section>
+    <section id="proyectos">
         <div class="tarjetasdos">
             <div class="títulodetarjetas">
                 <h6>Mis proyectos</h6>
+            </div>
+            <div class="botones-de-proyectos">
+                <ul class="clases-de-proyectos">
+                    <li>
+                        <a class="top-bar" href="#contacto"><button class="boton-morado">Todos</button></a>
+                        <a class="top-bar" href="#HTML/CSS"><button class="boton-blanco">HTML/CSS</button></a>
+                        <a class="top-bar" href="#JavaScript"><button class="boton-blanco">JavaScript</button></a>
+                        <a class="top-bar" href="#React"><button class="boton-blanco">React</button></a>
+                    </li>
+                </ul>
             </div>
             <div class="contenedor-tarjetas">
                 <div class="secundaria">
@@ -148,7 +163,6 @@
                             <img class="imagenesmoradas" src="imagenesdeada/movies.png">
                         </div>
                         <p>Buscador de películas</p>
-
                     </div>
                 </div>
             </div>
@@ -161,13 +175,19 @@
         <nav>
             <div class="footer">
                 <ul class="lista-de-footer">
-                    <li><a class="lifooter" href="#HOLA">HOLA</li></a>
-                    <li><a class="lifooter" href="#conocimientos">CONOCIMIENTOS</li></a>
-                    <li><a class="lifooter" href="#proyectos">PROYECTOS</li></a>
-                    <li>
-                        <a class="lifooter" href="#contacto">CONTACTO</li></a>
-                    </li>
+                    <li> <a class="lifooter" href="#HOLA">HOLA</a></li>
+                    <li>  <a class="lifooter" href="#conocimientos">CONOCIMIENTOS</a></li>
+                    <li>  <a class="lifooter" href="#proyectos">PROYECTOS</a></li>
+                    <li> <a class="lifooter" href="#contacto">CONTACTO</a></li>
                 </ul>
+                <div class="iconos-de-footer">
+                <i class="devicon-github-plain"></i>
+                <i class="devicon-linkedin-plain"></i>
+                <i class="devicon-twitter-plain"></i>
+                <i class="fas fa-envelope"></i>
+            
+            </div>
+            <p class="mensaje-final">Hecho con mucho amor por Angélica Pagés Burgos</p>
             </div>
         </nav>
     </section>

@@ -16,7 +16,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
 }
 li {
   list-style-type: none;
@@ -25,11 +24,9 @@ li {
 .top-bar {
   text-decoration: none;
   color: #392d40;
+  font-family: 'Montserrat', sans-serif;
 }
 
-a:visited {
-color: #392d40;
-}
 .boton-morado {
   color: #ffffff;
   background-color:#392d40;
@@ -190,6 +187,14 @@ color: #8b709c;
   font-weight: bolder;
   justify-content: center;
 }
+.boton-blanco {
+  background-color: #e7f7e1;
+  font-size: inherit;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20%;
+  border: none;
+  padding: 20px;
+}
 
 .contenedor-tarjetas {
   display: flex;
@@ -213,12 +218,12 @@ color: #8b709c;
     border: 1px solid #dddfe5;
     border-radius: 8px;
     width: calc(100% / 3 - (22px * 2));
-    height: calc(100% / 3 - (22px * 2));
     margin: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .contenedor-img {
@@ -237,29 +242,46 @@ color: #8b709c;
   }
 
   /*SECCIÓN FOOTER*/
+
   .footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #6b5678;
+    padding: 100px;
   }
 
 .lista-de-footer {
+  margin: 20px;
   display: flex;
  flex-direction: row;
 }
 
 .lifooter{
   text-decoration: none;
+ font-family: 'Montserrat', sans-serif;
+ color: #e7f7e1;
+}
+
+.iconos-de-footer {
+  margin-top: 20px;
+flex-wrap: wrap;
+text-align: center;
+  justify-content: space-around;
+font-size: xx-large;
   color: #e7f7e1;
 }
 
+.mensaje-final {
+  color: #e7f7e1;
+}
 
 /*MEDIA QUERI*/
 
 @media (min-width:600px)and (max-width:900px) {
 
-  .top-bar {
+  .top-bar , .lista-de-footer {
     display: none;
   }
   .menuhamburguesa{
@@ -290,7 +312,7 @@ color: #8b709c;
 }
 
 @media (max-width:600px) {
-  .top-bar , .lifooter {
+  .top-bar , .lista-de-footer {
     display: none;
   }
   
