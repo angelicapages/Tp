@@ -220,10 +220,20 @@ color: #8b709c;
     flex-direction: column;
     justify-content: center;
   }
-  
+
+  .contenedor-img {
+    display: flex;
+    height: 60%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
  .imagenesmoradas {
-    width: 80%;
-    height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+    height: auto;
   }
 
 
