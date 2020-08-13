@@ -22,7 +22,7 @@ li {
   list-style-type: none;
   margin: 10px;
 }
-a {
+.top-bar {
   text-decoration: none;
   color: #392d40;
 }
@@ -162,7 +162,7 @@ font-size: 100px;
 text-align: center;
 }
 
-.frasemuymuyinspiradora {
+.frase-en-texto {
   margin-top: 10px;
   font-size: large;
 }
@@ -236,12 +236,30 @@ color: #8b709c;
     height: auto;
   }
 
+  /*SECCIÓN FOOTER*/
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b5678;
+  }
+
+.lista-de-footer {
+  display: flex;
+ flex-direction: row;
+}
+
+.lifooter{
+  text-decoration: none;
+  color: #e7f7e1;
+}
+
 
 /*MEDIA QUERI*/
 
 @media (min-width:600px)and (max-width:900px) {
 
-  li {
+  .top-bar {
     display: none;
   }
   .menuhamburguesa{
@@ -272,7 +290,7 @@ color: #8b709c;
 }
 
 @media (max-width:600px) {
-  li {
+  .top-bar , .lifooter {
     display: none;
   }
   
