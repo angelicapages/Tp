@@ -3,25 +3,30 @@
 body {
   margin:0;
 }
+
 .menuhamburguesa{
   display:none;
 }
+
 .menu-pc {
   padding: 25px;
   display: flex;
   justify-content: flex-end;
   box-shadow: 0 0 13px 0 rgba(134, 134, 134, 0.25);
 }
+
 .secciones-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 li {
   list-style-type: none;
   margin: 10px;
 }
-.top-bar {
+
+.top-bar , .boton-proyecto , .lo-que-hago-boton{
   text-decoration: none;
   color: #392d40;
   font-family: 'Montserrat', sans-serif;
@@ -52,31 +57,37 @@ button:hover {
   flex-wrap: wrap ;
   align-content: center;
 }
+
 .imagen-informacion {
   height: 600px;
   width: 700px;
   max-width: 100%;
   max-height: 10%;
 }
+
 img { 
   width: 100%;
   height: auto;
 }
+
 .informacion {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
 }
+
 h1 {
   color:#2e2e31;
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
 }
+
 h2{
   color: #8b709c;
   font-size: 60px;
   font-family:'Spartan', sans-serif;
 }
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   color: #2e2e31;
@@ -133,13 +144,14 @@ h4 {
   margin: 10px;
   text-align: center;
 }
+
 p {
   font-family: 'Montserrat', sans-serif;
 }
 
 .imagenes {
-width: 130px;
-height:130px ;
+  width: 130px;
+  height:130px ;
 }
 
 /*SECCIÓN DE FRASE INSPIRADORA*/
@@ -155,8 +167,8 @@ height:130px ;
 }
 .comillas {
   margin-bottom: 20px;
-font-size: 100px;
-text-align: center;
+  font-size: 100px;
+  text-align: center;
 }
 
 .frase-en-texto {
@@ -181,12 +193,13 @@ h5 {
 }
 
 h6 {
-color: #8b709c;
+  color: #8b709c;
   font-family: 'Spartan', sans-serif;
   font-size: 40px;
   font-weight: bolder;
   justify-content: center;
 }
+
 .boton-blanco {
   background-color: #e7f7e1;
   font-size: inherit;
@@ -212,50 +225,51 @@ color: #8b709c;
 }
 
 .segunda {
-    color: #2e2e31;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #dddfe5;
-    border-radius: 8px;
-    width: calc(100% / 3 - (22px * 2));
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  color: #2e2e31;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #dddfe5;
+  border-radius: 8px;
+  width: calc(100% / 3 - (22px * 2));
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-img {
+  display: flex;
+  height: 60%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
   }
 
-  .contenedor-img {
-    display: flex;
-    height: 60%;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-  }
- .imagenesmoradas {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    width: 100%;
-    height: auto;
-  }
+.imagenesmoradas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
 
   /*SECCIÓN FOOTER*/
 
-  .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #6b5678;
-    padding: 100px;
-  }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #6b5678;
+  padding: 100px;
+}
 
 .lista-de-footer {
   margin: 20px;
   display: flex;
- flex-direction: row;
+  flex-direction: row;
 }
 
 .lifooter{
@@ -266,27 +280,35 @@ color: #8b709c;
 
 .iconos-de-footer {
   margin-top: 20px;
-flex-wrap: wrap;
-text-align: center;
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: space-around;
-font-size: xx-large;
+  font-size: xx-large;
   color: #e7f7e1;
 }
 
 .mensaje-final {
+  text-align: center;
   color: #e7f7e1;
 }
 
 /*MEDIA QUERI*/
 
+/*PARA TABLETS*/
+
 @media (min-width:600px)and (max-width:900px) {
+
+  /*ALUGNOS BOTONOES Y SU COMPORTAMIENTO*/
 
   .top-bar , .lista-de-footer {
     display: none;
   }
   .menuhamburguesa{
     display:block;
-}
+  }
+
+  /*SECCIÓN PRINCIPAL*/
+
   .portada {
     display: flex;
     flex-direction: column;
@@ -305,20 +327,34 @@ font-size: xx-large;
     width: 500px;
   }
 
+  /*SECCIÓN DE MIS PROYECTOS*/
+
   .segunda {
     width: calc(100% / 2 - (22px * 2));
   }
   
 }
 
+/*PARA TELÉFONOS*/
+
 @media (max-width:600px) {
+
+  /*ALGUNOS BOTONES Y SU COMPORTAMIENTO*/
+
   .top-bar , .lista-de-footer {
     display: none;
   }
-  
+
+  .boton-proyecto {
+    font-size: small;
+  }
+
   .menuhamburguesa{
     display:block;
   }
+
+  /*SECCIÓN PRINCIPAL*/
+
   .portada {
     display: flex;
     flex-direction: column;
@@ -326,18 +362,39 @@ font-size: xx-large;
     justify-content: center;
     text-align: center;
   }
+
   .informacion {
     justify-content: center;
     align-items: center;
     align-self: center;
     text-align: center;
   }
+  h1 {
+    color:#2e2e31;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+  h2{
+    color: #8b709c;
+    font-size: 50px;
+    font-family:'Spartan', sans-serif;
+}
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2e2e31;
+    font-size: medium;
+  }
+  
+  /*SECCIÓN TARJETAS DE MIS PROYECTOS*/
 
-  .tarjetas {
+    .tarjetas {
     text-align: center;
   }
+
   .segunda {
     width: 100%;
-    height: 300px
-  };
+    height: 300px;
+  }
+  
+  
 }
