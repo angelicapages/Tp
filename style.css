@@ -287,6 +287,11 @@ h6 {
   color: #e7f7e1;
 }
 
+a {
+
+  color: #e7f7e1;
+}
+
 .mensaje-final {
   text-align: center;
   color: #e7f7e1;
@@ -322,6 +327,10 @@ h6 {
     align-self: center;
     text-align: center;
   }
+
+ a {
+   text-decoration: none;
+ }
   .imagen-informacion {
     height: 500px;
     width: 500px;
