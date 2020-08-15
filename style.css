@@ -288,8 +288,8 @@ h6 {
 }
 
 a {
-
   color: #e7f7e1;
+  text-decoration: none;
 }
 
 .mensaje-final {
@@ -328,9 +328,7 @@ a {
     text-align: center;
   }
 
- a {
-   text-decoration: none;
- }
+
   .imagen-informacion {
     height: 500px;
     width: 500px;
