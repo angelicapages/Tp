@@ -5,9 +5,7 @@ console.log (menuHamburguesaSeleccionado)
 console.log(topBar)
 console.log(menuHamburguesa)
 
-for (let menuSeleccionado of menuHamburguesaSeleccionado){
-menuSeleccionado.classList.toggle ("hidden")
-}
+menuHamburguesa.classList.add ("menuHamburguesaSeleccionado")
 
 
 //menuHamburguesa.onclick = () => {
