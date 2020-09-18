@@ -5,8 +5,6 @@ console.log (menuHamburguesaSeleccionado)
 console.log(topBar)
 console.log(menuHamburguesa)
 
-menuHamburguesa.classList.add ("menuHamburguesaSeleccionado")
-
 
 //menuHamburguesa.onclick = () => {
     //console.log ("El")
