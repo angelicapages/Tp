@@ -33,7 +33,7 @@ li {
   font-family: 'Montserrat', sans-serif;
 }
 
-button:focus {
+.boton-sin-seleccionar:focus {
   color: #ffffff;
   background-color:#392d40;
   font-size: inherit;
@@ -332,39 +332,26 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
   }
   .secciones-menu{
     display: flex;
   }
   
   .menu-responsivo {
-    display: flex;
+    display: block;
   }
   
-  .menuhamburguesa-seleccionado {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-  
-    text-decoration: none;
-    color: #392d40;
-    font-family: 'Montserrat', sans-serif;
-    transition: (3s);
-  }
   
   .secciones-menu-seleccionado {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
   }
   
       .menuhamburguesa{
-        display: flex;
+        display: block;
         border: none;
-  
-        justify-content: flex-start;
+        z-index: 2;
         background-color: transparent;
         transition: (3s);
       }
@@ -404,7 +391,22 @@ a {
 @media (max-width:600px) {
 
   /*ALGUNOS BOTONES Y SU COMPORTAMIENTO*/
+  .menu-pc {
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 2s;
+  }
 
+.header-grande{
+  height: 200px;
+  transition: all 2s;
+}
+
+.link-menu-hamburguesa {
+  color: #2e2e31;
+}
 
   .top-bar , .lista-de-footer , .hidden {
     display: none;
@@ -417,48 +419,39 @@ a {
   button:hover {
     background-color: #ffffff;
   }
-.menu-pc {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+
+  .secciones-menu{
+    display: flex;
+  }
+  
+  .menu-responsivo {
+    display: block;
+  }
+
+  .secciones-menu-seleccionado {
+    display: block;
+
+  }
+  
+.menuhamburguesa{
+  display: block;
+  border: none;
+  z-index: 2;
+  background-color: transparent;
 }
-.secciones-menu{
-  display: flex;
-}
+  
+  .menu-con-animacion {
+    position: absolute;
+   background-color:transparent; 
+   font-family: 'Montserrat', sans-serif;
+   top: -200px;
+   transition: all 2s;
+  }
 
-.menu-responsivo {
-  display: flex;
-}
-
-.menuhamburguesa-seleccionado {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-
-  text-decoration: none;
-  color: #392d40;
-  font-family: 'Montserrat', sans-serif;
-  transition: (3s);
-}
-
-.secciones-menu-seleccionado {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-    .menuhamburguesa{
-      display: flex;
-      border: none;
-
-      justify-content: flex-start;
-      background-color: transparent;
-      transition: (3s);
-    }
-
-
+  .menu-animacion-activo{
+    top: 100px;
+  
+  }
 
   /*SECCIÓN PRINCIPAL*/
 
