@@ -309,6 +309,9 @@ a {
   color: #e7f7e1;
 }
 
+.hidden{
+  display: none;
+}
 /*MEDIA QUERI*/
 
 /*PARA TABLETS*/
@@ -401,7 +404,6 @@ a {
 @media (max-width:600px) {
 
   /*ALGUNOS BOTONES Y SU COMPORTAMIENTO*/
-  
 
 
   .top-bar , .lista-de-footer , .hidden {
