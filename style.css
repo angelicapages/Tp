@@ -33,7 +33,17 @@ li {
   font-family: 'Montserrat', sans-serif;
 }
 
-.boton-morado {
+button:focus {
+  color: #ffffff;
+  background-color:#392d40;
+  font-size: inherit;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20%;
+  border: none;
+  padding: 20px;
+}
+
+.boton-principal{
   color: #ffffff;
   background-color:#392d40;
   font-size: inherit;
@@ -45,7 +55,7 @@ li {
 
 button:hover {
   background-color: #8b709c ;
-
+  color: #392d40;
 }
 
 /*SECCIÓN PRINCIPAL*/
@@ -201,9 +211,10 @@ h6 {
   justify-content: center;
 }
 
-.boton-blanco {
+.boton-sin-seleccionar {
   background-color: #e7f7e1;
   font-size: inherit;
+  color: #392d40;
   font-family: 'Montserrat', sans-serif;
   border-radius: 20%;
   border: none;

@@ -1,15 +1,18 @@
 const menuHamburguesa = document.querySelector(".menuhamburguesa")
 const topBar = document.getElementsByTagName("header")
 const menuHamburguesaSeleccionado = document.getElementsByClassName("secciones-menu-seleccionado")
-console.log (menuHamburguesaSeleccionado)
-console.log(topBar)
-console.log(menuHamburguesa)
+const botonTodos = document.querySelector("#todos")
+const botonHtml = document.querySelector("#html")
+const botonjavascript = document.querySelector("#javascript")
+const botonreact = document.querySelector("#react")
+const tarjetasDeProyectos = document.querySelectorAll(".secundaria")
+const botonesDeProyectos = document.querySelectorAll(".clases-de-proyectos button")
 
 
-//menuHamburguesa.onclick = () => {
-    //console.log ("El")
-    //for (let topBarelements of topBar) {
-        //topBarelements.classList.remove ("topbar")
-        //topBarelements.classList.add(".menuhamburguesa-seleccionado")
-    //}
-//}
+    for (let botonProyecto of botonesDeProyectos) {
+        botonProyecto.onclick = () => {
+            for (let tarjetaProyectos of tarjetasDeProyectos) {
+                if (tarjetaProyectos.dataset.nombre)
+        }
+    }
+}
