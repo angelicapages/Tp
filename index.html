@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- aca estas importando tres veces montserrat: una sola alcanza -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,800;1,900&display=swap"
@@ -13,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- con importar una sola vez devicon alcanza -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
 
@@ -48,8 +50,15 @@
 
     <!-- SECCIÓN PRINCIPAL -->
     <section id="HOLA">
+        <!-- este div portada no es necesario, podriamos darle la clase portada a section 
+        y borrar este div  -->
         <div class="portada">
             <div class="informacion">
+                <!-- tu nombre es mas importante que la palabra "hola", por lo que eso deberia ser el h1 
+                Tambien deberias tener en cuenta que los segundos titulos mas importantes son los de cada seccion,
+                por lo que "hola" y "programadora" deberian ser h3, y "mis conocimientos" y "mis proyectos"
+                deberian ser h2. 
+                -->
                 <h1>Hola! Soy</h1>
                 <h2>Angélica Pagés Burgos</h2>
                 <h3>Programadora</h3>
@@ -63,7 +72,10 @@
 
     <!--SECCIÓN TARJETAS DE MIS CONOCIMIENTOS-->
     <section id="conocimientos">
+                <!-- este div tarjetas no es necesario, podriamos darle la clase tarjetas a section 
+        y borrar este div  -->
         <div class="tarjetas">
+            <!-- lo estandar en las clases es separar las palabras con guiones, y no usar tildes: titulo-de-tarjetas -->
             <div class="títulodetarjetas">
                 <h4>Mis conocimientos</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, aut!</p>
@@ -100,6 +112,8 @@
 
     <!--SECCIÓN DE FRASE INSPIRADORA-->
     <section>
+        <!-- este div fraseinspiradora no es necesario, podriamos darle la clase fraseinspiradora a section 
+        y borrar este div  -->
         <div class="fraseinspiradora">
             <div class="comillas">
                 <i class="fas fa-quote-left"></i>
@@ -115,8 +129,12 @@
 
     <!--SECCIÓN MIS PROYECTOS-->
     <section id="proyectos">
+    <!-- este div tarjetasdos no es necesario, podriamos darle la clase tarjetasdos a section 
+        y borrar este div  -->
         <div class="tarjetasdos">
             <div class="títulodetarjetas">
+                <!-- este titulo, mas alla de la jerarquia que tiene, tiene la misma que "mis conocimientos" - 
+                ambos son encabezados de secciones, asi que deben tener el mismo numero en el h.  -->
                 <h6>Mis proyectos</h6>
             </div>
             <div class="botones-de-proyectos">
@@ -182,7 +200,11 @@
     </section>
 
     <!--SECCIÓN FOOTER-->
+
+    <!-- esta etiqueta deberia ser <footer> -->
     <section>
+ <!-- este nav contiene cosas que no son proiamente elementos de una nav - deberia rodear a ul, 
+ pero no al div footer  -->
         <nav>
             <div class="footer">
                 <ul class="lista-de-footer">
